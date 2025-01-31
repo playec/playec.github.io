@@ -17,7 +17,7 @@ export default function Post( { props } ) {
     useEffect(() => {
         if (key) {
             // Hacer la solicitud a la API de GitHub
-            fetch(`https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/posts/${key}.json`)
+            fetch(`https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/_posts/${key}.json`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Repositorio no encontrado')
