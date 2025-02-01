@@ -1,49 +1,54 @@
 'use client'
+ 
+import { useSearchParams } from 'next/navigation'
+import { Suspense, useState, useEffect } from 'react'
 
-import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect, useState } from "react";
+function Search() {
 
-export default function Post( { props } ) {
-
-    const pathname = usePathname()
     const searchParams = useSearchParams()
-
     const key = searchParams.get('key')
 
-    const [repoData, setRepoData] = useState(null)
+    const [rootData, setJsonData] = useState(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        if (key) {
-            // Hacer la solicitud a la API de GitHub
+
+        if(key){
+
             fetch(`https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/_posts/${key}.json`)
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Repositorio no encontrado')
+                        throw new Error('Archivo no encontrado')
                     }
                     return response.json()
                 })
                 .then(data => {
-                    setRepoData(data)
+                    setJsonData(data)
                     setLoading(false)
                 })
                 .catch(error => {
                     setError(error.message)
                     setLoading(false)
                 })
+
         }
+
     }, [key])
 
-    if (loading) return <p>Cargando...</p>
-    if (error) return <p>Error: {error}</p>
+    if(rootData){
+        return <p>Title {rootData.title}</p>
+    }else{
+        return <p>Not found</p>
+    }
+   
+  }
 
+export default function About() {
     return (
-        <div>
-            <h1>Post {repoData.title}</h1>
-            <div>
-                <p>{repoData.description}</p>
-            </div>
-        </div>
+        <Suspense>
+            <Search />
+        </Suspense>
     )
+    
 }
