@@ -1,22 +1,22 @@
 'use client'
  
-import { useSearchParams } from 'next/navigation'
+import { useParams } from 'next/navigation'
 import { Suspense, useState, useEffect } from 'react'
 
 function Search() {
 
-    const searchParams = useSearchParams()
-    const key = searchParams.get('key')
+    const params = useParams()
+    const itemName = params.name
 
-    const [rootData, setJsonData] = useState(null)
+    const [jsonData, setJsonData] = useState(null)
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
 
     useEffect(() => {
 
-        if(key){
+        if(itemName){
 
-            fetch(`https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/_posts/${key}.json`)
+            fetch(`https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/_posts/${itemName}.json`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Archivo no encontrado')
@@ -34,17 +34,21 @@ function Search() {
 
         }
 
-    }, [key])
+    }, [itemName])
 
-    if(rootData){
-        return <p>Title {rootData.title}</p>
-    }else{
-        return <p>Not found</p>
-    }
+    if (loading) return <p>Cargando...</p>
+    if (error) return <p>Error: {error}</p>
+
+    return (
+        <div>
+            <h1>{jsonData.title}</h1>
+            <p>{jsonData.body}</p>
+        </div>
+    )
    
   }
 
-export default function About() {
+export default function Item() {
     return (
         <Suspense>
             <Search />
