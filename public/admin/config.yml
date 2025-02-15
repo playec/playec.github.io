@@ -1,0 +1,35 @@
+local_backend: true
+backend:
+  name: git-gateway
+  repo: playec/playec.github.io
+  branch: main
+  base_url: "https://playec.github.io"
+
+site_url: https://playec.netlify.app
+
+media_folder: "media"
+public_folder: "/media"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: demopublickey
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: 'Post'
+    folder: "src/posts"
+    extension: "json"
+    format: "json"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "",
+          default: "YYYY-MM-DD HH:mm",
+        }
+      - { label: "Body", name: "body", widget: "text", hint: "Main content goes here." }
