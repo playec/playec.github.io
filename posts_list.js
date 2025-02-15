@@ -4,8 +4,8 @@ const path = require('path')
 // Ruta a la carpeta de posts
 const postsFolder = path.join(process.cwd(), 'src', 'posts')
 
-// Ruta al archivo posts_lists.json
-const outputFile = path.join(process.cwd(), 'src', 'posts_lists.json')
+// Ruta al archivo posts.json
+const outputFile = path.join(process.cwd(), 'public', 'posts.json')
 
 // Leer todos los archivos JSON en la carpeta de posts
 const postFiles = fs.readdirSync(postsFolder).filter((file) => file.endsWith('.json'))
@@ -17,7 +17,7 @@ const postsList = postFiles.map((file) => {
   return JSON.parse(fileContent)
 })
 
-// Escribir el archivo posts_lists.json
+// Escribir el archivo posts.json
 fs.writeFileSync(outputFile, JSON.stringify(postsList, null, 2))
 
-console.log('posts_lists.json generado correctamente')
+console.log('posts.json generado correctamente')
