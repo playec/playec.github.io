@@ -1,2 +1,3 @@
 [build]
   command = "node posts_list.js && next build"
+  publish = ".next"
