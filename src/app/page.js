@@ -19,7 +19,11 @@ export default function Home() {
     <div>
       <ul>
       {posts.map(function(post){
-        return <li>{post.title}</li>
+        return <li>
+          <h3>{post.title}</h3>
+          <br></br>
+          <p>{post.body}</p>
+        </li>
       })}
       </ul>
     </div>
