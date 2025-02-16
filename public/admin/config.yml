@@ -20,10 +20,13 @@ collections:
     folder: "src/posts"
     extension: "json"
     format: "json"
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     create: true
     fields:
+      - { label: "uid", name: "uid", widget: "hidden", default: '{{now}}' }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - { label: "Slug", name: "slug", widget: "hidden", default: '{{slug}}' }
       - {
           label: "Publish Date",
           name: "date",
@@ -31,4 +34,4 @@ collections:
           format: "",
           default: "YYYY-MM-DD HH:mm",
         }
-      - { label: "Body", name: "body", widget: "text", hint: "Main content goes here." }
+      - { label: "Body", name: "body", widget: "text", hint: "Información del producto." }

@@ -2,30 +2,32 @@ import fs from 'fs'
 import path from 'path'
 
 export default function Home() {
-
-  const filePath = path.join(process.cwd(), 'public', 'posts.json')
-  let posts = []
+  
   try{
 
+    const filePath = path.join(process.cwd(), 'public', 'recents.json')
     const fileContent = fs.readFileSync(filePath, 'utf8')
-    posts = JSON.parse(fileContent)
+    const posts = JSON.parse(fileContent)
 
-  }catch(e){
-    posts = []
-  }
-  
-  return <div>
-    <h1>Bienvenidos a Playec</h1>
-    <div>
+    return <div>
+      <h1>Productos destacados</h1>
       <ul>
-      {posts.map(function(post){
-        return <li>
-          <h3>{post.title}</h3>
-          <br></br>
-          <p>{post.body}</p>
-        </li>
-      })}
+        {posts.map((post) => (
+          <li key={post.slug}>
+            <a href={`/post/${post.slug}`}>
+              <h2>{post.title}</h2>
+              <p>Fecha: {post.date}</p>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
-  </div>
+
+  }catch(e){
+    return <div>
+      <p>No se ha encontrado productos disponibles.</p>
+    </div>
+  }
+  
+  
 }

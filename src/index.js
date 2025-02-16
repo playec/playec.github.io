@@ -5,7 +5,7 @@ const path = require('path')
 const postsFolder = path.join(process.cwd(), 'src', 'posts')
 
 // Ruta al archivo posts.json
-const outputFile = path.join(process.cwd(), 'public', 'posts.json')
+const outputFile = path.join(process.cwd(), 'public', 'recents.json')
 
 // Leer todos los archivos JSON en la carpeta de posts
 const postFiles = fs.readdirSync(postsFolder).filter((file) => file.endsWith('.json'))
