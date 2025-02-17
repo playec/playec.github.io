@@ -50,6 +50,7 @@ collections:
         collapsed: true
         widget: "list"
         fields:
+          - {label: "Detail", name: "detail", widget: "string", required: false}
           - {label: "Value", name: "value", widget: "number", value_type: "int", default: 5, min: 1, max: 100}
           - {label: "Price", name: "price", widget: "number", value_type: "float", default: 0.00, min: 0.00}
           
