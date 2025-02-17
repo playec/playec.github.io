@@ -29,7 +29,7 @@ collections:
       - { label: "Uid", name: "uid", widget: "hidden", default: '{{uuidv4()}}' }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
-      - { label: "Slug", name: "slug", widget: "string", default: "{{slug}}" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "post-title-one", default: 'post-{{uuidv4()}}' }
       - {
           label: "Publish Date",
           name: "date",
