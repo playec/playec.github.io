@@ -1,7 +1,7 @@
-import Head from 'next/head'
 import fs from 'fs'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
+import styles from './page.module.css'
 
 export default function Home() {
   
@@ -11,12 +11,11 @@ export default function Home() {
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const posts = JSON.parse(fileContent)
 
-    return <div>
-      <Head>
-        <link rel="stylesheet" href="/css/base.css" />
-        <link rel="stylesheet" href="/css/suctom.css" />
-      </Head>
-      <h1>Productos destacados</h1>
+    return <div className={styles.container}>
+      <div>
+        <a href=''><img src='/logo-editor.png'></img></a>
+      </div>
+      <h2 className={styles.title}>Productos destacados</h2>
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
