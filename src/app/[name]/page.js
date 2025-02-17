@@ -7,7 +7,7 @@ export default async function Post({ params, searchParams}) {
 
     return (
         <div>
-            <h1>Post page name {slug}</h1>
+            <h1>Página {slug}</h1>
         </div>
     )
     
