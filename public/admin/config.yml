@@ -7,7 +7,7 @@ backend:
 site_url: https://playec.netlify.app
 
 media_folder: "public/uploads"
-public_folder: "/media"
+public_folder: "/uploads"
 
 scripts:
   - https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js
@@ -32,10 +32,23 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["Tarjeta"] }
       - { label: "Slug", name: "slug", widget: "string", hint: "post-title-one", default: 'post-{{uuidv4()}}' }
       - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          choose_url: true,
+          default: "/uploads/playstation.png"
+        }
+      - {
           label: "Publish Date",
           name: "date",
           widget: "datetime",
           format: "",
-          default: "YYYY-MM-DD HH:mm",
+          default: "YYYY-MM-DD HH:mm"
         }
       - { label: "Content", name: "content", widget: "text", hint: "Información del producto." }
+      - label: "Cards"
+        name: "cards"
+        widget: "object"
+        fields:
+          - {label: "Value", name: "value", widget: "number", value_type: "int", default: 5, min: 1, max: 100}
+          - {label: "Price", name: "price", widget: "number", value_type: "float", default: 0.00, min: 0.00}
