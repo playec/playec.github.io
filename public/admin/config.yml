@@ -19,6 +19,7 @@ media_library:
 collections:
   - name: "posts"
     label: "Posts"
+    widget: "object"
     label_singular: 'Post'
     folder: "src/posts"
     extension: "json"
@@ -26,9 +27,9 @@ collections:
     slug: '{{slug}}'
     create: true
     fields:
-      - { label: "Uid", name: "uid", widget: "hidden", default: '{{uuidv4()}}' }
+      - { label: "Uid", name: "uid", widget: "hidden", summary: '{{uuidv4()}}', default: '{{uuidv4()}}' }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["Tarjeta"] }
       - { label: "Slug", name: "slug", widget: "string", hint: "post-title-one", default: 'post-{{uuidv4()}}' }
       - {
           label: "Publish Date",

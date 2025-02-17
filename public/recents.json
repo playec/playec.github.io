@@ -1,10 +1,23 @@
 [
   {
-    "uid": 1,
-    "id": 1,
-    "key": 1,
-    "date": "2025-02-14T22:15:00-05:00",
-    "title": "Tarjetas PlayStation Store US",
-    "body": "Compra tu recarga PSN disponible valores de 10/20/50/100"
+    "uid": "{{uuidv4()}}",
+    "tags": [
+      "tarjetas"
+    ],
+    "slug": "nintendo-eshop-us",
+    "date": "2025-02-17T10:43:00-05:00",
+    "title": "Nintendo eShop US",
+    "content": "Adquiere tus códigos de Nintendo eShop. Compra juegos, complementos, dlc y servicios."
+  },
+  {
+    "uid": "{{uuidv4()}}",
+    "tags": [
+      "tarjetas"
+    ],
+    "slug": "playstation-store-us",
+    "date": "2025-02-15T22:16:00-05:00",
+    "title": "Playstation Store US",
+    "body": "Tarjetas de recarga para PlayStation Store",
+    "content": "Códigos de recarga para tu billetera de PlayStation Network"
   }
 ]
