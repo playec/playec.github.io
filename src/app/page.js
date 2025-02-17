@@ -14,10 +14,10 @@ export default function Home() {
       <ul>
         {posts.map((post) => (
           <li key={post.slug}>
-            <a href="post/{post.slug}">
+            <a href={post.slug}>
               <h2>{post.title}</h2>
-              <p>Fecha: {post.date}</p>
             </a>
+            <p>Información: {post.content}</p>
           </li>
         ))}
       </ul>
