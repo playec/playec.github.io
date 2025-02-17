@@ -2,35 +2,10 @@
  * Custom CSS
  */
 
-@font-face{
-	font-family: 'BebasNeue-Regular';
-	src: url(../fonts/BebasNeue-Regular.woff) format('woff'), url(../fonts/BebasNeue-Regular.ttf) format('truetype'), url(../fonts/BebasNeue-Regular.otf) format('opentype');
-}
-
-@font-face{
-	font-family: 'Biko_Black';
-	src: url(../fonts/Biko_Black.otf) format('opentype');
-}
-
-@font-face{
-	font-family: 'Biko_Bold';
-	src: url(../fonts/Biko_Bold.otf) format('opentype');
-}
-
-@font-face{
-	font-family: 'Biko_Light-Restricted';
-	src: url(../fonts/Biko_Light-Restricted.otf) format('opentype');
-}
-
-@font-face{
-	font-family: 'Biko_Regular';
-	src: url(../fonts/Biko_Regular.otf) format('opentype');
-}
-
 body{
 	font-family: Arial;
 	color: #1b1b1b;
-	background-color: #FFF;
+	background-color: #F00;
 	font-size: 18px;
 }
 

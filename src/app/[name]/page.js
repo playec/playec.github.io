@@ -1,14 +1,15 @@
-import fs from 'fs'
-import path from 'path'
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
-export default async function Post({ params, searchParams}) {
-
-    const slug = (await params).name
-
+export default function Home() {
+    const markdown = "**Hightlast**"
     return (
-        <div>
-            <h1>Página {slug}</h1>
+    <div>
+      <div>
+            <ReactMarkdown>
+              {markdown}
+            </ReactMarkdown>
         </div>
-    )
-    
+    </div>
+  )
 }
