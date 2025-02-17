@@ -9,6 +9,9 @@ site_url: https://playec.netlify.app
 media_folder: "public/uploads"
 public_folder: "/media"
 
+scripts:
+  - https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js
+
 media_library:
   name: uploadcare
   config:
@@ -23,10 +26,10 @@ collections:
     slug: '{{slug}}'
     create: true
     fields:
-      - { label: "uid", name: "uid", widget: "hidden", default: '{{now}}' }
+      - { label: "Uid", name: "uid", widget: "hidden", default: '{{uuidv4()}}' }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"] }
-      - { label: "Slug", name: "slug", widget: "hidden", default: '{{slug}}' }
+      - { label: "Slug", name: "slug", widget: "string", default: "{{slug}}" }
       - {
           label: "Publish Date",
           name: "date",
@@ -34,4 +37,4 @@ collections:
           format: "",
           default: "YYYY-MM-DD HH:mm",
         }
-      - { label: "Body", name: "body", widget: "text", hint: "Información del producto." }
+      - { label: "Content", name: "content", widget: "text", hint: "Información del producto." }
