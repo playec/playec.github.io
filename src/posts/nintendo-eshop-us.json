@@ -1,10 +1,30 @@
 {
-  "uid": "{{uuidv4()}}",
   "tags": [
-    "Tarjetas"
+    "Tarjeta",
+    "Nintendo",
+    "eshop"
   ],
   "slug": "nintendo-eshop-us",
-  "date": "2025-02-17T10:43:00-05:00",
+  "thumbnail": "https://ucarecdn.com/7fe05b39-c84a-400b-aab3-7b4352a35a40/",
+  "date": "2025-02-17T12:04:00-05:00",
+  "cards": [
+    {
+      "value": 10,
+      "price": 10.7
+    },
+    {
+      "value": 20,
+      "price": 21.4
+    },
+    {
+      "value": 35,
+      "price": 37.45
+    },
+    {
+      "value": 50,
+      "price": 53.5
+    }
+  ],
   "title": "Nintendo eShop US",
-  "content": "Adquiere tus códigos de Nintendo eShop. Compra juegos, complementos, dlc y servicios."
+  "content": "<p>Códigos de Nintendo eShop y Nintendo Switch Online</p>\n\n    <h4>1. Códigos de Nintendo eShop</h4>\n    <p>\n        <strong>Qué son:</strong> Son códigos que permiten añadir saldo a la cuenta de Nintendo eShop para realizar compras.\n    </p>\n    <p>\n        <strong>Para qué sirven:</strong>\n        <ul>\n            <li>Comprar juegos digitales, DLCs, contenido adicional y aplicaciones en la tienda de Nintendo eShop.</li>\n            <li>Adquirir temas, avatares y otros elementos personalizables.</li>\n            <li>Renovar suscripciones como Nintendo Switch Online.</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Disponibilidad:</strong> Vienen en diferentes denominaciones ($10, $20, $50 USD o su equivalente en otras monedas).\n    </p>\n    <p>\n        <strong>Dónde conseguirlos:</strong> En tiendas físicas, en línea o a través de distribuidores autorizados.\n    </p>\n    <p>\n        <strong>Cómo usarlos:</strong> Se canjean en la tienda de Nintendo eShop desde una consola Nintendo Switch, 3DS o Wii U, o a través de la página web de Nintendo.\n    </p>\n\n    <h4>2. Códigos de Nintendo Switch Online</h4>\n    <p>\n        <strong>Qué son:</strong> Son códigos específicos para activar o renovar la suscripción al servicio <strong>Nintendo Switch Online</strong>.\n    </p>\n    <p>\n        <strong>Para qué sirven:</strong>\n        <ul>\n            <li>Acceder a funciones online en juegos de Nintendo Switch.</li>\n            <li>Jugar títulos clásicos de NES, SNES, Game Boy y otros sistemas retro (dependiendo del plan).</li>\n            <li>Guardar partidas en la nube.</li>\n            <li>Obtener beneficios exclusivos, como ofertas en la eShop o acceso a DLCs (en el caso del <strong>Paquete de Expansión</strong>).</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Tipos de membresía:</strong>\n        <ul>\n            <li><strong>Individual:</strong> Para una sola cuenta.</li>\n            <li><strong>Familiar:</strong> Para hasta 8 cuentas.</li>\n            <li><strong>Paquete de Expansión:</strong> Incluye acceso a juegos de N64, SEGA Genesis y DLCs como <em>Animal Crossing: New Horizons - Happy Home Paradise</em>.</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Cómo usarlos:</strong> Se canjean en la tienda de Nintendo eShop o en la página web de Nintendo.\n    </p>\n\n    <p>\n        Una forma conveniente de gestionar el saldo o suscripciones en la plataforma de Nintendo sin necesidad de usar una tarjeta de crédito o débito directamente.\n    </p>"
 }
