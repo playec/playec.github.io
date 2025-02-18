@@ -1,0 +1,28 @@
+{
+  "tags": [
+    "Tarjeta",
+    "Steam",
+    "wallet",
+    "pc",
+    ""
+  ],
+  "slug": "valve-steam-us",
+  "thumbnail": "https://ucarecdn.com/9bfbbc0a-b8a2-47f3-957d-f77956e1a86c/",
+  "date": "2025-02-17T21:13:00-05:00",
+  "cards": [
+    {
+      "value": 10,
+      "price": 10.5
+    },
+    {
+      "value": 20,
+      "price": 21
+    },
+    {
+      "value": 50,
+      "price": 52.5
+    }
+  ],
+  "content": "Las **tarjetas de Steam Wallet** son tarjetas de regalo que se pueden canjear por saldo en Steam. Este saldo permite comprar videojuegos, contenido descargable, software y otros artículos dentro de la plataforma. Están disponibles en formato físico y digital, con distintos valores en moneda local. Son una opción popular para regalar crédito a otros jugadores sin necesidad de vincular una tarjeta de crédito.",
+  "title": "Valve Steam US"
+}
