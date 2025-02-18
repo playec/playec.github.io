@@ -17,16 +17,30 @@ export default async function Post({ params, searchParams}) {
       return <div className='container'>
         <div className='content'>
           <h2>{post.title}</h2>
+          <div className='row superCard'>
+            <div className='col-4'>
+              <img src={post.thumbnail}></img>
+            </div>
+            <div className='col-4 offset-2'>
+              {post.cards.map(function(card, index){
+                return <ul className='list options'>
+                  <li>
+                    <a className='btn btn-buy' href='#'>
+                      <ul className='list'>
+                        {card.detail && <li><sub>{card.detail}</sub></li>}
+                        <li><b>USD {card.value}</b> - <span>${card.price}</span></li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
+              })}
+            </div>
+          </div>
           <div className='row'>
-        <div className='col-4'>
-          <img src={post.thumbnail}></img>
-        </div>
-        <div className='row'>
-        <ReactMarkdown>
-          {post.content}
-        </ReactMarkdown>
-        </div>
-        </div>
+            <ReactMarkdown>
+              {post.content}
+            </ReactMarkdown>
+          </div>
         </div>
       </div>
     }catch(e){
