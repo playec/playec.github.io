@@ -28,7 +28,7 @@ export default async function Post({ params, searchParams}) {
                     <a className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=593958940184'>
                       <ul className='list'>
                         {card.detail && <li><sub>{card.detail}</sub></li>}
-                        <li>{!card.detail && <b>{card.value}</b>} - <span>${card.price}</span></li>
+                        <li>{!card.detail && <b>USD {card.value}</b>} - <span>${card.price}</span></li>
                       </ul>
                     </a>
                   </li>
