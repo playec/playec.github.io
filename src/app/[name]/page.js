@@ -25,7 +25,7 @@ export default async function Post({ params, searchParams}) {
               {post.cards.map(function(card, index){
                 return <ul className='list options'>
                   <li>
-                    <a className='btn btn-buy' href='#'>
+                    <a className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=59395894018'>
                       <ul className='list'>
                         {card.detail && <li><sub>{card.detail}</sub></li>}
                         <li><b>USD {card.value}</b> - <span>${card.price}</span></li>
