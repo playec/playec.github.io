@@ -1,0 +1,60 @@
+.container {
+    font-family: Arial, Helvetica;
+    max-width: 1200px;
+    margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: transparent;
+}
+
+.content {
+	padding: 20px;
+}
+
+#header .logo{
+	display: block;
+}
+
+#header{
+	position: relative;
+}
+
+#header .content{
+	max-width: 1200px;
+	padding: 40px;
+}
+
+#header .menu{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: Arial;
+}
+
+#header .menu li a{
+	padding: 10px 15px;
+}
+
+.card{
+	padding: 5px;
+}
+
+.card .thumbnail{
+
+}
+
+.card .button{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.card .btn-buy{
+	text-align: center;
+	display: block;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: rgb(98, 98, 98);
+	color: rgb(236, 236, 236);
+	text-transform: uppercase;
+	text-decoration: solid;
+	font-weight: bold;
+}

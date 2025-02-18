@@ -14,16 +14,20 @@ export default async function Post({ params, searchParams}) {
       const fileContent = fs.readFileSync(filePath, 'utf8')
       const post = JSON.parse(fileContent)
       
-      return <div>
-        <div>
+      return <div className='container'>
+        <div className='content'>
           <h2>{post.title}</h2>
-        </div>
-        <div>
+          <div className='row'>
+        <div className='col-4'>
           <img src={post.thumbnail}></img>
         </div>
+        <div className='row'>
         <ReactMarkdown>
           {post.content}
         </ReactMarkdown>
+        </div>
+        </div>
+        </div>
       </div>
     }catch(e){
       return

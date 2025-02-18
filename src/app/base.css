@@ -14,7 +14,7 @@
 }
 
 body{
-	background: #F00 !important;
+	background: transparent;
 }
 
 a{
@@ -882,10 +882,6 @@ hr{
 	height: auto;
 	margin: 0;
 	padding: 0;
-}
-
-.slide-loading{
-	background: url(../images/Eclipse-1s-200px.svg) no-repeat center;
 }
 
 /* Simplest box*/

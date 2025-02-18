@@ -1,7 +1,7 @@
+import custom from './page.module.css'
 import fs from 'fs'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
-import styles from './page.module.css'
 
 export default function Home() {
   
@@ -11,24 +11,24 @@ export default function Home() {
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const posts = JSON.parse(fileContent)
 
-    return <div className={styles.container}>
-      <div>
-        <a href=''><img src='/logo-editor.png'></img></a>
-      </div>
-      <h2 className={styles.title}>Productos destacados</h2>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <div>
-              <h2>{post.title}</h2>
-              <div><img src={post.thumbnail}></img></div>
-              <div>
-                <a href={post.slug}>Comprar producto</a>
+    return <div className='container'>
+      <div className='content'>
+        <h2 className={custom.title}>Productos destacados</h2>
+        <div className='row'>
+        {posts.map(function(post, index){
+            return <div className='col-4'>
+              <div className='card' key={post.slug}>
+                <div className='thumbnail'>
+                  <a href={post.slug}><img src={post.thumbnail}></img></a>
+                </div>
+                <div className='button'>
+                  <a className='btn btn-buy' href={post.slug}>Mirar precios</a>
+                </div>
               </div>
             </div>
-          </li>
-        ))}
-      </ul>
+        })}
+        </div>
+      </div>
     </div>
 
   }catch(e){
