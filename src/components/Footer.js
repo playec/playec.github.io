@@ -7,7 +7,7 @@ export default function Header(){
                 <li><a target="_blank" href="https://api.whatsapp.com/send?phone=593958940184">WhatsApp</a></li>
             </ul>
             <br></br>
-            <sub>© 2025 Playec tienda local Minorista de videojuegos.</sub>
+            <sub>© 2025 Playec tienda minorista local de tecnología y videojuegos.</sub>
         </div>
     </div>
 }

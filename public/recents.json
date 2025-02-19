@@ -6,7 +6,7 @@
       "eshop"
     ],
     "slug": "nintendo-eshop-us",
-    "thumbnail": "https://ucarecdn.com/7fe05b39-c84a-400b-aab3-7b4352a35a40/",
+    "thumbnail": "https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/public/uploads/nintendo%20eshop.png",
     "date": "2025-02-17T12:04:00-05:00",
     "cards": [
       {
@@ -24,10 +24,20 @@
       {
         "value": 50,
         "price": 53.5
+      },
+      {
+        "value": 3,
+        "price": 8.4,
+        "detail": "Switch Online 3 Meses"
+      },
+      {
+        "value": 12,
+        "price": 21.4,
+        "detail": "Switch Online 12 Meses"
       }
     ],
     "title": "Nintendo eShop US",
-    "content": "<p>Códigos de Nintendo eShop y Nintendo Switch Online</p>\n\n    <h4>1. Códigos de Nintendo eShop</h4>\n    <p>\n        <strong>Qué son:</strong> Son códigos que permiten añadir saldo a la cuenta de Nintendo eShop para realizar compras.\n    </p>\n    <p>\n        <strong>Para qué sirven:</strong>\n        <ul>\n            <li>Comprar juegos digitales, DLCs, contenido adicional y aplicaciones en la tienda de Nintendo eShop.</li>\n            <li>Adquirir temas, avatares y otros elementos personalizables.</li>\n            <li>Renovar suscripciones como Nintendo Switch Online.</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Disponibilidad:</strong> Vienen en diferentes denominaciones ($10, $20, $50 USD o su equivalente en otras monedas).\n    </p>\n    <p>\n        <strong>Dónde conseguirlos:</strong> En tiendas físicas, en línea o a través de distribuidores autorizados.\n    </p>\n    <p>\n        <strong>Cómo usarlos:</strong> Se canjean en la tienda de Nintendo eShop desde una consola Nintendo Switch, 3DS o Wii U, o a través de la página web de Nintendo.\n    </p>\n\n    <h4>2. Códigos de Nintendo Switch Online</h4>\n    <p>\n        <strong>Qué son:</strong> Son códigos específicos para activar o renovar la suscripción al servicio <strong>Nintendo Switch Online</strong>.\n    </p>\n    <p>\n        <strong>Para qué sirven:</strong>\n        <ul>\n            <li>Acceder a funciones online en juegos de Nintendo Switch.</li>\n            <li>Jugar títulos clásicos de NES, SNES, Game Boy y otros sistemas retro (dependiendo del plan).</li>\n            <li>Guardar partidas en la nube.</li>\n            <li>Obtener beneficios exclusivos, como ofertas en la eShop o acceso a DLCs (en el caso del <strong>Paquete de Expansión</strong>).</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Tipos de membresía:</strong>\n        <ul>\n            <li><strong>Individual:</strong> Para una sola cuenta.</li>\n            <li><strong>Familiar:</strong> Para hasta 8 cuentas.</li>\n            <li><strong>Paquete de Expansión:</strong> Incluye acceso a juegos de N64, SEGA Genesis y DLCs como <em>Animal Crossing: New Horizons - Happy Home Paradise</em>.</li>\n        </ul>\n    </p>\n    <p>\n        <strong>Cómo usarlos:</strong> Se canjean en la tienda de Nintendo eShop o en la página web de Nintendo.\n    </p>\n\n    <p>\n        Una forma conveniente de gestionar el saldo o suscripciones en la plataforma de Nintendo sin necesidad de usar una tarjeta de crédito o débito directamente.\n    </p>"
+    "content": "Los **códigos de Nintendo eShop** y **Nintendo Switch Online** son tarjetas digitales o físicas que contienen un código alfanumérico para canjear en la plataforma de Nintendo. \n\n### **1. Códigos de Nintendo eShop**\n- **Qué son**: Son códigos que permiten añadir saldo a la cuenta de Nintendo eShop para realizar compras.\n- **Para qué sirven**:\n  - Comprar juegos digitales, DLCs, contenido adicional y aplicaciones en la tienda de Nintendo eShop.\n  - Adquirir temas, avatares y otros elementos personalizables.\n  - Renovar suscripciones como Nintendo Switch Online.\n- **Disponibilidad**: Vienen en diferentes denominaciones (por ejemplo, $10, $20, $50 USD o su equivalente en otras monedas).\n- **Cómo usarlos**: Se canjean en la tienda de Nintendo eShop desde una consola Nintendo Switch, 3DS o Wii U, o a través de la página web de Nintendo.\n\n---\n\n### **2. Códigos de Nintendo Switch Online**\n- **Qué son**: Son códigos específicos para activar o renovar la suscripción al servicio **Nintendo Switch Online**.\n- **Para qué sirven**:\n  - Acceder a funciones online en juegos de Nintendo Switch.\n  - Jugar títulos clásicos de NES, SNES, Game Boy y otros sistemas retro (dependiendo del plan).\n  - Guardar partidas en la nube.\n  - Obtener beneficios exclusivos, como ofertas en la eShop o acceso a DLCs (en el caso del **Paquete de Expansión**).\n- **Tipos de membresía**:\n  - **Individual**: Para una sola cuenta.\n  - **Familiar**: Para hasta 8 cuentas.\n  - **Paquete de Expansión**: Incluye acceso a juegos de N64, SEGA Genesis y DLCs como *Animal Crossing: New Horizons - Happy Home Paradise*.\n- **Cómo usarlos**: Se canjean en la tienda de Nintendo eShop o en la página web de Nintendo."
   },
   {
     "tags": [
@@ -36,7 +46,7 @@
       "Store"
     ],
     "slug": "sony-playstation-store-us",
-    "thumbnail": "https://ucarecdn.com/91ef4ae9-7fd5-498c-bc26-b830c8c1590e/",
+    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/playstation%20store.png?raw=true",
     "date": "2025-02-17T11:51:00-05:00",
     "cards": [
       {
@@ -61,6 +71,34 @@
       }
     ],
     "title": "Sony PlayStation Store US",
-    "content": "<p>Los ***códigos de recarga de PlayStation*** son tarjetas digitales contienen un código alfanumérico que permite añadir fondos a la <b>cartera de PlayStation Network (PSN)</b>. Estos fondos pueden utilizarse para:</p>\n<ul>\n<li>1. <b>Comprar juegos, DLCs, temas y avatares</b> en la PlayStation Store.</li>\n<li>2. <b>Renovar suscripciones</b> como PlayStation Plus o PlayStation Now.</li>\n<li>3. <b>Adquirir contenido adicional</b> como paquetes de expansión o microtransacciones en juegos.</li>\n</ul>\n<p>Los códigos de recarga están disponibles en diferentes denominaciones ($10, $20, $50 USD) disponibles a través de distribuidores autorizados. Una vez que se canjea el código, el saldo se añade a la cuenta de PSN y puede usarse en cualquier consola PlayStation (PS4, PS5) o en la tienda web de PlayStation.</p>"
+    "content": "Los **códigos de recarga de PlayStation** son tarjetas digitales o físicas que contienen un código alfanumérico que permite añadir fondos a la **cartera de PlayStation Network (PSN)**. Estos fondos pueden utilizarse para:\n\n1. **Comprar juegos, DLCs, temas y avatares** en la PlayStation Store.\n2. **Renovar suscripciones** como PlayStation Plus o PlayStation Now.\n3. **Adquirir contenido adicional** como paquetes de expansión o microtransacciones en juegos.\n\nLos códigos de recarga están disponibles en diferentes denominaciones (por ejemplo, $10, $20, $50 USD o su equivalente en otras monedas) y pueden comprarse en tiendas físicas, en línea o a través de distribuidores autorizados. Una vez que se canjea el código, el saldo se añade a la cuenta de PSN y puede usarse en cualquier consola PlayStation (PS4, PS5) o en la tienda web de PlayStation."
+  },
+  {
+    "tags": [
+      "Tarjeta",
+      "Steam",
+      "wallet",
+      "pc",
+      ""
+    ],
+    "slug": "valve-steam-us",
+    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/steam-card.png?raw=true",
+    "date": "2025-02-17T21:13:00-05:00",
+    "cards": [
+      {
+        "value": 10,
+        "price": 10.5
+      },
+      {
+        "value": 20,
+        "price": 21
+      },
+      {
+        "value": 50,
+        "price": 52.5
+      }
+    ],
+    "content": "Las **tarjetas de Steam Wallet** son tarjetas de regalo que se pueden canjear por saldo en Steam. Este saldo permite comprar videojuegos, contenido descargable, software y otros artículos dentro de la plataforma. Están disponibles en formato físico y digital, con distintos valores en moneda local. Son una opción popular para regalar crédito a otros jugadores sin necesidad de vincular una tarjeta de crédito.",
+    "title": "Valve Steam US"
   }
 ]
