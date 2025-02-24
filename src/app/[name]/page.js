@@ -27,7 +27,8 @@ export default async function Post({ params, searchParams}) {
             <div className='col-4'>
               <img src={post.thumbnail}></img>
             </div>
-            <div className='col-4 offset-2'>
+            <div className='col-8'>
+              <div className='content'>
               {post.cards.map(function(card, index){
                 return <ul className='list options'>
                   <li>
@@ -40,6 +41,7 @@ export default async function Post({ params, searchParams}) {
                   </li>
                 </ul>
               })}
+              </div>
             </div>
           </div>
           <div className='row'>

@@ -70,7 +70,7 @@ body{
 }
 
 .superCard .options{
-	margin-top: 5px;
+	margin: 10px;
 }
 
 .superCard .btn-buy{
@@ -86,11 +86,13 @@ body{
 	color: #FFF;
 }
 
+.options{
+	padding: 0px;
+}
+
 @media screen and (max-width: 1280px){
 
-	.navbar .nav-side{
-		display: none;
-	}
+	
 	
 }
 

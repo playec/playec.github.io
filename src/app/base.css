@@ -8,8 +8,8 @@
  */
  *{
 	margin: 0;
-	padding: 0;
 	border: none;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -28,6 +28,10 @@ a:hover{
 
 a:visited{
 	color: #323233;
+}
+
+ul{
+	padding: revert;
 }
 
 body p{
@@ -233,22 +237,67 @@ body p{
 
 /* Navigation bar */
 .navbar{ /* fill all elements in section */
-	display: flex;
-	flex-wrap: nowrap;
+	position: relative;
+}
+.navbar::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .navbar [class*="nav-"]{
 	line-height: inherit;
+	display: block;
 }
 
 .navbar .nav-brand{
 	width: auto; /* align left */
+	float: left;
+}
+.navbar .nav-brand::after{
+	content: "";
+	clear: right;
 }
 
 .navbar .nav-side{
-	clear: both;
-	display: inline-flex;
 	margin: auto; /* align columns */
+	float: right;
+}
+.navbar .nav-side::before{
+	content: "";
+	clear: left;
+}
+
+
+/*Navigation buttons*/
+.nav-top{
+	position: absolute;
+	top: 0px;
+	z-index: 99999;
+	padding: 10px;
+}
+.nav-top.left{
+	left: 0px;
+}
+.nav-top.right{
+	right: 0px;
+}
+
+.navbar .navbar-toggle{
+	display: inherit;
+}
+
+.navbar .navbar-menu{
+	display: none;
+	float: right;
+}
+
+.navbar .navbar-menu.left{ /* navbar-menu align left */
+	margin-left: 0px;
+}
+
+.navbar .navbar-menu.right{ /* navbar-menu align right */
+	margin-right: 0px;
 }
 
 .navbar .nav-side:first-child{
@@ -289,6 +338,33 @@ body p{
 
 .menu li a{
 	display: block;
+}
+
+/* Button menu toggle style */
+#menu-toggle{
+	display: block;
+	border-radius: 7px;
+	background-color: #ebebeb;
+}
+
+#menu-toggle .menu-btn{
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+#menu-toggle .menu-btn div{
+	display: block;
+	background-color: #989898;
+	height: 4px;
+	width: 25px;
+}
+
+#menu-toggle .menu-btn div:first-child{
+	margin-bottom: 20%;
+}
+#menu-toggle .menu-btn div:last-child{
+	margin-top: 20%;
 }
 
 /* Images resize */
@@ -728,7 +804,7 @@ img, video, object, embed{
 	text-align: center;
 }
 
-/* navbar togge */
+/* navbar toggle */
 .btn-toggle{
 	display: none;
 }
@@ -956,26 +1032,34 @@ hr{
 	}
 
 	/* navigation menu */
-	.nav-side .hide{
+	.navbar .hide{
+		display: none;
+	}
+	.navbar .show{
 		display: block;
 	}
 
-	/* toggle button */
-	.btn-toggle{
-		display: inline-block;
+	/* toggle navbar */
+	.navbar .navbar-menu{
+		display: block;
 	}
-	.navbar-toggle{
-		display: none;
+	.navbar .navbar-toggle{
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.navbar .navbar-toggle .menu{
+		display: block;
+		position: relative;
+		padding: 0px;
+	}
+	.navbar .navbar-toggle .menu li{
+		position: relative;
+		display: block;
+		width: 100%;
 	}
 	.toggle-close{
 		display: inline-block;
-	}
-	.visible{
-		position: absolute;
-		display: block;
-		background: #d8d9d6;
-		width: 100%!important;
-		left: 0;
 	}
 
 }
@@ -996,11 +1080,11 @@ hr{
 		width: 100%;
 	}
 
-	/* toggle button */
-	.btn-toggle{
-		display: inline-block;
+	/* toggle navbar */
+	.navbar .navbar-menu{
+		display: block;
 	}
-	.navbar-toggle{
+	.navbar .navbar-toggle{
 		display: none;
 	}
 	.toggle-close{

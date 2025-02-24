@@ -6,7 +6,7 @@
       "eshop"
     ],
     "slug": "nintendo-eshop-us",
-    "thumbnail": "https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/public/uploads/nintendo%20eshop.png",
+    "thumbnail": "https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/public/uploads/nintendo-eshop.png",
     "date": "2025-02-17T12:04:00-05:00",
     "cards": [
       {
@@ -43,10 +43,10 @@
     "tags": [
       "Tarjeta",
       "Sony",
-      "Store"
+      "store"
     ],
     "slug": "sony-playstation-store-us",
-    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/playstation%20store.png?raw=true",
+    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/playstation-store.png?raw=true",
     "date": "2025-02-17T11:51:00-05:00",
     "cards": [
       {
@@ -71,18 +71,17 @@
       }
     ],
     "title": "Sony PlayStation Store US",
-    "content": "Los **códigos de recarga de PlayStation** son tarjetas digitales o físicas que contienen un código alfanumérico que permite añadir fondos a la **cartera de PlayStation Network (PSN)**. Estos fondos pueden utilizarse para:\n\n1. **Comprar juegos, DLCs, temas y avatares** en la PlayStation Store.\n2. **Renovar suscripciones** como PlayStation Plus o PlayStation Now.\n3. **Adquirir contenido adicional** como paquetes de expansión o microtransacciones en juegos.\n\nLos códigos de recarga están disponibles en diferentes denominaciones (por ejemplo, $10, $20, $50 USD o su equivalente en otras monedas) y pueden comprarse en tiendas físicas, en línea o a través de distribuidores autorizados. Una vez que se canjea el código, el saldo se añade a la cuenta de PSN y puede usarse en cualquier consola PlayStation (PS4, PS5) o en la tienda web de PlayStation."
+    "content": "Los **códigos de recarga de PlayStation** son tarjetas digitales o físicas que contienen un código alfanumérico que permite añadir fondos a la **cartera de PlayStation Network (PSN)**. Estos fondos pueden utilizarse para:\n\n### 1. **Comprar juegos, DLCs, temas y avatares** en la PlayStation Store.\n### 2. **Renovar suscripciones** como PlayStation Plus o PlayStation Now.\n### 3. **Adquirir contenido adicional** como paquetes de expansión o microtransacciones en juegos.\n\nLos códigos de recarga están disponibles en diferentes denominaciones (por ejemplo, $10, $20, $50 USD o su equivalente en otras monedas) y pueden comprarse en tiendas físicas, en línea o a través de distribuidores autorizados. Una vez que se canjea el código, el saldo se añade a la cuenta de PSN y puede usarse en cualquier consola PlayStation (PS4, PS5) o en la tienda web de PlayStation."
   },
   {
     "tags": [
       "Tarjeta",
       "Steam",
       "wallet",
-      "pc",
-      ""
+      "pc"
     ],
     "slug": "valve-steam-us",
-    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/steam-card.png?raw=true",
+    "thumbnail": "https://github.com/playec/playec.github.io/blob/main/public/uploads/steam-wallet.png?raw=true",
     "date": "2025-02-17T21:13:00-05:00",
     "cards": [
       {
