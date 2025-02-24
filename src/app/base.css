@@ -1080,20 +1080,35 @@ hr{
 		width: 100%;
 	}
 
+	/* Navigation */
+	.navbar .hide{
+		display: none;
+	}
+	.navbar .show{
+		display: block;
+	}
+
 	/* toggle navbar */
 	.navbar .navbar-menu{
 		display: block;
 	}
 	.navbar .navbar-toggle{
-		display: none;
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.navbar .navbar-toggle .menu{
+		display: block;
+		position: relative;
+		padding: 0px;
+	}
+	.navbar .navbar-toggle .menu li{
+		position: relative;
+		display: block;
+		width: 100%;
 	}
 	.toggle-close{
 		display: inline-block;
-	}
-	.visible{
-		position: absolute;
-		display: block;
-		left: 0;
 	}
 
 }
