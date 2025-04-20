@@ -13,8 +13,7 @@ const chunkArray = (array, size) => {
 export default function Home() {
 
   const filePath = path.join(process.cwd(), 'src', 'index', 'recents.json')
-  const fileContent = fs.readFileSync(filePath, 'utf8')
-  const list = JSON.parse(fileContent)
+  const list = JSON.parse(fs.readFileSync(filePath, 'utf8'))
   const recents = chunkArray(list, 3)
 
   return <div className='container'>
