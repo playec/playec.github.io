@@ -7,9 +7,13 @@ import Link from 'next/link'
 
 export function data(slug){
   const filePath = path.join(process.cwd(), 'src', 'items', slug + '.json')
-  const fileContent = fs.readFileSync(filePath, 'utf8')
-  return JSON.parse(fileContent)
+  if(fs.existsSync(filePath)){
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    return JSON.parse(fileContent)
+  }
+  return ''
 }
+
 export async function generateMetadata({ params, searchParams }, parent) {
   const {name} = await params
   // fetch data
