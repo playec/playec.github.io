@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            ))} 
+            ))}
           </div>
         )) : <p>No se ha encontrado productos disponibles.</p>}
       </div>
