@@ -44,7 +44,7 @@ export default async function Post({ params, searchParams}) {
                 <span>Código canjeable disponible en diferentes denominaciones</span>
                 <ul className='list options'>
                   {product.cards.map(function (card, index) {
-                    return <li>
+                    return <li key={index}>
                       <Link className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=593958940184'>
                         <div className='row'>
                           {card.detail && <div><sub>{card.detail}</sub></div>}
