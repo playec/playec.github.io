@@ -3,6 +3,7 @@ import path from 'path'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Script from 'next/script'
+import Link from 'next/link'
 
 export function data(slug){
   const filePath = path.join(process.cwd(), 'src', 'posts', slug + '.json')
@@ -32,28 +33,31 @@ export default async function Post({ params, searchParams}) {
       
       return <div className='container'>
         <div className='content'>
-          <h2>{product.title}</h2>
           <div className='row superCard'>
             <div className='col-4'>
               <img src={product.thumbnail}></img>
             </div>
             <div className='col-8'>
               <div className='content'>
-              {product.cards.map(function(card, index){
-                return <ul className='list options'>
-                  <li>
-                    <a className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=593958940184'>
-                      <ul className='list'>
-                        {card.detail && <li><sub>{card.detail}</sub></li>}
-                        <li>{!card.detail && <b>USD {card.value} - </b>}<span>${card.price}</span></li>
-                      </ul>
-                    </a>
-                  </li>
+                <h2>{product.title}</h2>
+                <br></br>
+                <span>Código canjeable disponible en diferentes denominaciones</span>
+                <ul className='list options'>
+                  {product.cards.map(function (card, index) {
+                    return <li>
+                      <a className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=593958940184'>
+                        <div className='row'>
+                          {card.detail && <div><sub>{card.detail}</sub></div>}
+                          {!card.detail && <div className='col-10'><span className='left'>USD {card.value} </span></div>}<div className='col-2'><b>${card.price.toFixed(2)}</b></div>
+                        </div>
+                      </a>
+                    </li>
+                  })}
                 </ul>
-              })}
               </div>
             </div>
           </div>
+          <br></br>
           <div className='row'>
             <ReactMarkdown>
               {product.content}

@@ -57,29 +57,23 @@ body{
 	margin-bottom: 5px;
 }
 
-.card .btn-buy{
-	text-align: center;
-	display: block;
-	border-radius: 15px;
-	padding: 20px;
-	background-color: rgb(98, 98, 98);
-	color: rgb(236, 236, 236);
-	text-transform: uppercase;
-	text-decoration: solid;
-	font-weight: bold;
+.superCard .options{
+	margin: 1px;
 }
 
-.superCard .options{
-	margin: 10px;
+.superCard .options li{
+	margin-top: 10px;
 }
 
 .superCard .btn-buy{
 	text-align: right;
 	display: block;
-	padding: 15px;
-	color: #FFF;
-	background-color: rgb(23, 23, 23);
-	border-radius: 10px;
+	border-radius: 11px;
+	padding: 12px;
+	background-color: rgba(0, 0, 0, 0.865);
+	color: rgb(236, 236, 236);
+	text-transform: uppercase;
+	text-decoration: solid;
 }
 
 .superCard .btn-buy:hover {
