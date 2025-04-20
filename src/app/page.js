@@ -20,6 +20,7 @@ export default function Home() {
   return <div className='container'>
       <div className='content'>
         <h2 className={custom.title}>Productos destacados</h2>
+        <br></br>
         {recents.length ? recents.map((products, groupIndex) => (
           <div className='row' key={groupIndex}>
             {products.map((product, index) => (

@@ -57,6 +57,18 @@ body{
 	margin-bottom: 5px;
 }
 
+.card .btn-buy{
+	text-align: center;
+	display: block;
+	border-radius: 13px;
+	padding: 15px;
+	background-color: rgba(33, 36, 80, 0.742);
+	color: rgb(236, 236, 236);
+	text-transform: uppercase;
+	text-decoration: solid;
+	font-weight: bold;
+}
+
 .superCard .options{
 	margin: 1px;
 }
