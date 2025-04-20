@@ -26,10 +26,10 @@ export default function Home() {
             <div key={index} className='col-4'>
               <div className='card'>
                 <div className='thumbnail'>
-                  <Link href={product.slug}><Image src={product.thumbnail} width={200} height={300} alt='Thumbnail' /></Link>
+                  <Link href={'p'+product.slug}><Image src={product.thumbnail} width={200} height={300} alt='Thumbnail' /></Link>
                 </div>
                 <div className='button'>
-                  <Link className='btn btn-buy' href={product.slug}>Mirar precios</Link>
+                  <Link className='btn btn-buy' href={'p'+product.slug}>Mirar precios</Link>
                 </div>
               </div>
             </div>
