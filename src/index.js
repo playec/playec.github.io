@@ -1,10 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-// Ruta a la carpeta de posts
 const postsFolder = path.join(process.cwd(), 'src', 'posts')
-
-// Ruta al archivo posts.json
 const outputFile = path.join(process.cwd(), 'src', 'index', 'recents.json')
 
 try{
@@ -24,5 +21,7 @@ try{
   
   fs.writeFileSync(outputFile, JSON.stringify(postsList, null, 2))
 }catch(e){
+
   fs.writeFileSync(outputFile, JSON.stringify([], null, 2))
+  console.error(e);
 }
