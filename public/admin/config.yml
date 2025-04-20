@@ -17,11 +17,11 @@ media_library:
   config:
     publicKey: demopublickey
 collections:
-  - name: "posts"
-    label: "Posts"
+  - name: "products"
+    label: "Products"
     widget: "object"
-    label_singular: 'Post'
-    folder: "src/posts"
+    label_singular: 'Product'
+    folder: "src/items"
     extension: "json"
     format: "json"
     slug: '{{slug}}'
