@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "tarjeta",
+    "apple"
+  ],
+  "slug": "apple-itunes",
+  "thumbnail": "apple.png",
+  "date": "2025-04-20T12:12:00-05:00",
+  "cards": [
+    {
+      "value": 10,
+      "price": 10.7
+    },
+    {
+      "value": 20,
+      "price": 21.4,
+      "detail": ""
+    }
+  ],
+  "title": "Apple Tarjeta de regalo",
+  "content": "Para todo lo relacionado con Apple — iPad, AirPods, Apple Watch, iPhone, MacBook, iCloud, accesorios y más\nPerfecto para compras y suscripciones a la App Store: obtén aplicaciones, juegos, música, películas, programas de televisión y mucho más\nEl regalo ideal para decir feliz cumpleaños, gracias, felicitaciones y mucho más\nDisponible en $15-500\nTarjeta entregada por correo electrónico o SMS\nNo hay devoluciones ni reembolsos en tarjetas de regalo Apple\nVálido solo para transacciones de Estados Unidos en propiedades de Apple Para obtener ayuda, visite support.apple.com/giftcard o llame al 1-800-275-2273. No se puede canjear en revendedores de Apple o por dinero en efectivo, y sin reventa, reembolsos o cambios, excepto según lo exija la ley. Apple no es responsable del uso no autorizado. Se aplican los términos; consulte apple.com/us/go/legal/gc. Emitido por Apple Value Services, LLC (AVS). 2024 Apple Inc. Todos los derechos reservados."
+}
