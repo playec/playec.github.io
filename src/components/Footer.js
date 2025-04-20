@@ -1,4 +1,7 @@
 export default function Header(){
+
+    const current = new Date()
+
     return <div id="footer">
         <div className="content">
             <ul className="list">
@@ -7,7 +10,7 @@ export default function Header(){
                 <li><a target="_blank" href="https://api.whatsapp.com/send?phone=593958940184">WhatsApp</a></li>
             </ul>
             <br></br>
-            <sub>© 2025 Playec tienda minorista local de tecnología y videojuegos.</sub>
+            <sub>© {current.getFullYear()} Playec tienda minorista local de tecnología y videojuegos.</sub>
         </div>
     </div>
 }
