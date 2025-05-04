@@ -2,22 +2,13 @@ import fs from 'fs'
 import path from 'path'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import Script from 'next/script'
 import Link from 'next/link'
-
-export function data(slug){
-  const filePath = path.join(process.cwd(), 'src', 'items', slug + '.json')
-  if(fs.existsSync(filePath)){
-    const fileContent = fs.readFileSync(filePath, 'utf8')
-    return JSON.parse(fileContent)
-  }
-  return ''
-}
+import Data from '@/api/data'
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const {name} = await params
   // fetch data
-  const product = data(name)
+  const product = Data('items', name)
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || []
   return {
@@ -33,7 +24,7 @@ export default async function Post({ params, searchParams}) {
     try {
       
       const {name} = await params
-      const product = data(name)
+      const product = Data('items', name)
       
       return <div className='container'>
         <div className='content'>
