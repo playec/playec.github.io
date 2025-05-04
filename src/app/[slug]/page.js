@@ -40,9 +40,7 @@ export default async function Home({params, searchParams}) {
         <h2 className='page-title'>
           {page.title}
         </h2>
-        <div className='page-body'>
-          {page.body}
-        </div>
+        <div className='page-body' dangerouslySetInnerHTML={{ __html: page.body }} />
       </div>
     </div>
 
