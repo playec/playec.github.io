@@ -30,6 +30,10 @@ export default async function Home({params, searchParams}) {
   try{
     
     const page = Data('pages', name)
+
+    if(!page){
+      throw new Error("404")
+    }
     
     return <div className='container'>
       <div className='content'>

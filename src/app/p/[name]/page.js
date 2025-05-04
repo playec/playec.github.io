@@ -3,7 +3,7 @@ import path from 'path'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
-import Data from '@/api/data'
+import Data from '@/api/Data'
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const {name} = await params

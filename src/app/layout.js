@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'Playec - Videojuegos',
-  description: 'Tienda de videojuegos en Ecuador.',
+  description: 'Tienda de videojuegos en Tungurahua Ecuador.',
 }
 
 export default function RootLayout({ children }) {
