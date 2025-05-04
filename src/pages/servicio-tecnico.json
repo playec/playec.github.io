@@ -1,6 +1,6 @@
 {
   "slug": "servicio-tecnico",
-  "body": "- Realizamos reparaciones de mandos con drift y repuestos de botones\n- Instalación de chip RP2040 para Nintendo Switch\n- Auto Goldhen para PS4",
+  "body": "<ul>\n<li>- Realizamos reparaciones de mandos con drift y repuestos de botones</li>\n<li>- Instalación de chip RP2040 para Nintendo Switch</li>\n<li>- Auto Goldhen para PS4</li>\n</ul>",
   "title": "Servicio Técnico",
   "thumbnail": "https://raw.githubusercontent.com/playec/playec.github.io/refs/heads/main/public/banner.jpg"
 }
