@@ -1,14 +1,12 @@
-import fs from 'fs'
-import path from 'path'
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 import Data from '@/api/Data'
 
 export async function generateMetadata({ params, searchParams }, parent) {
-  const {name} = await params
+  const {slug} = await params
   // fetch data
-  const product = Data('items', name)
+  const product = Data('items', slug)
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || []
   return {
@@ -23,8 +21,8 @@ export default async function Post({ params, searchParams}) {
 
     try {
       
-      const {name} = await params
-      const product = Data('items', name)
+      const {slug} = await params
+      const product = Data('items', slug)
       
       return <div className='container'>
         <div className='content'>

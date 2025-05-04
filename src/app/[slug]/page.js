@@ -1,9 +1,9 @@
 import React from 'react'
-import Data from '@/api/data'
+import Data from '@/api/Data'
 
 export async function generateMetadata({ params }) {
 
-  const page = Data('pages', (await params).name)
+  const page = Data('pages', (await params).slug)
 
   return {
     title: page.title,
@@ -25,11 +25,11 @@ export async function generateMetadata({ params }) {
 
 export default async function Home({params, searchParams}) {
 
-  const { name } = await params
+  const { slug } = await params
 
   try{
     
-    const page = Data('pages', name)
+    const page = Data('pages', slug)
 
     if(!page){
       throw new Error("404")
