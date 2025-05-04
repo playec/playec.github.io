@@ -24,7 +24,7 @@ collections:
     folder: "src/menus"
     extension: "json"
     format: "json"
-    slug: '{{slug}}'
+    slug: "{{fields.slug}}"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
@@ -45,7 +45,7 @@ collections:
     folder: "src/items"
     extension: "json"
     format: "json"
-    slug: '{{slug}}'
+    slug: "{{fields.slug}}"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
@@ -82,8 +82,9 @@ collections:
     folder: "src/pages"
     extension: "json"
     format: "json"
-    slug: '{{slug}}'
+    slug: "{{fields.slug}}"
     create: true
+    identifier_field: "title"
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - { label: "Slug", name: "slug", widget: "string", default: 'page-path' }
