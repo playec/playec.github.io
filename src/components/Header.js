@@ -20,7 +20,7 @@ export default function Header(){
                 </div>
                 <div className="nav-side navbar-toggle">
                     <ul className="menu">
-                        {navbar["main-menu"].body.map((item, index) => (
+                        {navbar.body.map((item, index) => (
                             <li key={index}><Link href={item.slug}>{item.title}</Link></li>
                         ))}
                     </ul>

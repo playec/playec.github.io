@@ -1,17 +1,15 @@
 {
-  "main-menu" : {
-    "title": "Main menu",
-    "body": [
-      {
-        "order": 1,
-        "title": "Tienda",
-        "slug": "/"
-      },
-      {
-        "order": 2,
-        "title": "Nosotros",
-        "slug": "/nosotros"
-      }
-    ]
-  }
+  "title": "Main menu",
+  "body": [
+    {
+      "order": 1,
+      "title": "Tienda",
+      "slug": "/"
+    },
+    {
+      "order": 2,
+      "title": "Nosotros",
+      "slug": "/nosotros"
+    }
+  ]
 }

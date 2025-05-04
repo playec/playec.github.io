@@ -82,11 +82,11 @@ collections:
     folder: "src/pages"
     extension: "json"
     format: "json"
-    slug: '{{name}}'
+    slug: '{{slug}}'
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Name", name: "name", widget: "string", default: 'page-path' }
+      - { label: "Slug", name: "slug", widget: "string", default: 'page-path' }
       - {
           label: "Featured Image",
           name: "thumbnail",
