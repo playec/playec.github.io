@@ -38,7 +38,7 @@ export default async function Post({ params, searchParams}) {
                 <ul className='list options'>
                   {product.cards.map(function (card, index) {
                     return <li key={index}>
-                      <Link className='btn btn-buy' target='_blank' href='https://api.whatsapp.com/send?phone=593958940184'>
+                      <Link className='btn btn-buy' target='_blank' href='https://www.facebook.com/playecdigi'>
                         <div className='row'>
                           {card.detail && <div className='col-10'><sub className='left'>{card.detail}</sub></div>}
                           {!card.detail && <div className='col-10'><span className='left'>USD {card.value} </span></div>}<div className='col-2'><b>${card.price.toFixed(2)}</b></div>
