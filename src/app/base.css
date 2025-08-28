@@ -308,10 +308,6 @@ body p{
 	margin-right: 0px;
 }
 
-.navbar .hide{
-    visibility: hidden;
-}
-
 .list{
 	list-style: none;
 	list-style-type: none;
@@ -1031,20 +1027,12 @@ hr{
 		width: 100%;
 	}
 
-	/* navigation menu */
-	.navbar .hide{
-		display: none;
-	}
-	.navbar .show{
-		display: block;
-	}
-
 	/* toggle navbar */
 	.navbar .navbar-menu{
 		display: block;
 	}
 	.navbar .navbar-toggle{
-		display: block;
+		display: none; /* Hide navbar */
 		width: 100%;
 		position: relative;
 	}
@@ -1060,6 +1048,11 @@ hr{
 	}
 	.toggle-close{
 		display: inline-block;
+	}
+
+	/* navigation menu */
+	.navbar .show{
+		display: block;
 	}
 
 }
@@ -1080,20 +1073,12 @@ hr{
 		width: 100%;
 	}
 
-	/* Navigation */
-	.navbar .hide{
-		display: none;
-	}
-	.navbar .show{
-		display: block;
-	}
-
 	/* toggle navbar */
 	.navbar .navbar-menu{
 		display: block;
 	}
 	.navbar .navbar-toggle{
-		display: block;
+		display: none; /* Hide navbar */
 		width: 100%;
 		position: relative;
 	}
@@ -1109,6 +1094,11 @@ hr{
 	}
 	.toggle-close{
 		display: inline-block;
+	}
+
+	/* Navigation */
+	.navbar .show{
+		display: block;
 	}
 
 }

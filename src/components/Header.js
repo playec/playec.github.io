@@ -23,13 +23,13 @@ export default function Header(){
                         </button>
                     </label>
                 </div>
-                {toggle && (<div className="nav-side navbar-toggle">
+                <div className={toggle ? "nav-side navbar-toggle show" : "nav-side navbar-toggle"}>
                     <ul className="menu">
                         {navbar.body.map((item, index) => (
                             <li key={index}><Link href={item.slug}>{item.title}</Link></li>
                         ))}
                     </ul>
-                </div>)}
+                </div>
             </div>
         </div>
     </div>
